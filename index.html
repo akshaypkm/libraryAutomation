@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='studentattendancestyle.css') }}">
+    <title>Library Management System</title>
+    <style>
+        body {
+            background-image: url('{{ url_for('static', filename='ritbg.jpg') }}');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;   
+            height: 100vh;
+            background-position-y: -90px;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="Attendance-Head">Attendance</h1>
+        <form action="/login" method="post"> <!-- Change button to form -->
+            <input type="text" name="roll_number" class="textbox" placeholder="Register Number">
+            <button type="submit" class="login-button">Login</button>
+        </form>
+    </div>
+</body>
+</html>
